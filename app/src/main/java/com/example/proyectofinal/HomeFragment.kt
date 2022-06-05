@@ -193,7 +193,7 @@ class HomeFragment : Fragment() {
 
         val idJ = binding.etEliminar.text.toString()
         val idJ2 = idJ.toInt()
-
+        Toast.makeText(context, "Articulo Eliminado :c", Toast.LENGTH_LONG).show()
         homeViewModel.deleteItem(
 
             Item(
@@ -206,7 +206,7 @@ class HomeFragment : Fragment() {
             ))
         //Log.d("thesearetheitems", "ides2 : ${ides2}")
 
-
+        binding.etEliminar.text.clear()
         homeViewModel.getItems()
     }
     override fun onStop() {
