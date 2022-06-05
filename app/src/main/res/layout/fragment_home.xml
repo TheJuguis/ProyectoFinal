@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <View
+        android:id="@+id/barraSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/amarillito"
+        app:layout_constraintTop_toTopOf="@id/profile_image"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
+    android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <View
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="200dp"
+        android:background="#1E1E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barraSuperior"
+
+
+        tools:layout_editor_absoluteX="40dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/perfil"
+        app:civ_border_width="4dp"
+        app:civ_border_color="#E91E63"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvNivel"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE APELLIDO1 APELLIDO2"
+        android:textColor="#B8B8B8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvNick"
+        android:layout_marginTop="7dp"
+        android:textSize="15dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tvNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NICKNAME"
+        android:textColor="#B8B8B8"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvNombre"
+        />
+
+    <TextView
+        android:id="@+id/tvNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estas en el nivel xx"
+
+        app:layout_constraintTop_toTopOf="@id/profile_image"
+
+        android:layout_marginLeft="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tvPuntos"
+        android:textColor="@color/fiusha"
+        />
+
+    <TextView
+        android:id="@+id/tvPuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restan xxxx puntos para el siguiente nivel"
+        app:layout_constraintTop_toBottomOf="@id/tvNivel"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@id/profile_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvWishList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Blanco"
+        android:textSize="15dp"
+        android:text="LISTA DE DESEADOS"
+        app:layout_constraintTop_toTopOf="@id/contenedor"
+        app:layout_constraintLeft_toLeftOf="@id/contenedor"
+        app:layout_constraintRight_toRightOf="@id/contenedor"
+        app:layout_constraintBottom_toTopOf="@id/rvWishList"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWishList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/contenedor"
+        app:layout_constraintRight_toRightOf="@id/contenedor"
+        app:layout_constraintTop_toTopOf="@id/contenedor"
+        app:layout_constraintBottom_toBottomOf="@id/contenedor"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_wishlist"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Eliminar"
+        app:layout_constraintTop_toBottomOf="@id/contenedor"
+        app:layout_constraintLeft_toRightOf="@+id/etEliminar"
+
+        android:textSize="10dp"
+        app:iconTint="@color/fiusha"
+        app:icon="@drawable/remove_icon"
+        android:background="#00000000"
+        android:textColor="@color/fiusha"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/etEliminar"
+        android:hint="ID de item a eliminar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnEliminar"
+        app:layout_constraintTop_toBottomOf="@id/contenedor"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/tvnombreElim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <TextView
+        android:id="@+id/tvDescripElim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="639dp" />
+
+    <TextView
+        android:id="@+id/tvPrecioElim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="668dp" />
+
+    <TextView
+        android:id="@+id/tvCalifElim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="604dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
