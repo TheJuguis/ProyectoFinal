@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
@@ -33,8 +34,11 @@ class SearchFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+
+
         binding = FragmentSearchBinding.inflate(layoutInflater)
         binding.contenedor.isVisible=false
+        binding.tvPrice2.isVisible=false
         queue = Volley.newRequestQueue(context)
         binding.btnBuscar.setOnClickListener {
 
@@ -93,8 +97,10 @@ class SearchFragment : Fragment() {
             binding.tvPrice.setText(response.getString("price").replaceFirstChar { it.uppercaseChar() })
             binding.tvCal.setText(response.getString("category").replaceFirstChar { it.uppercaseChar() })
             val img = response.getString("image").replaceFirstChar { it.uppercase() }
+            binding.tvPrice2.isVisible=true
             Picasso.get().load(img).into(binding.ivProductSearch)
             Log.d("imagenItem", "Link: $img")
+            Picasso.get().load(response.getString("image")).into(binding.ivProductSearch)
         },
             Response.ErrorListener { errorMessage ->
 
@@ -103,6 +109,10 @@ class SearchFragment : Fragment() {
             }
         )
         queue.add(jsonRequest)
+
+
+
+
     }
     override fun onStop() {
         super.onStop()

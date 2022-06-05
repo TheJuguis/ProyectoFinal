@@ -15,6 +15,7 @@ import com.android.volley.toolbox.Volley
 import com.example.proyectofinal.database.Item
 
 import com.example.proyectofinal.databinding.FragmentSugerenciasBinding
+import com.squareup.picasso.Picasso
 import org.json.JSONObject
 
 class SugerenciasFragment : Fragment() {
@@ -174,7 +175,7 @@ class SugerenciasFragment : Fragment() {
             binding.tvPriceR1.setText(response.getString("price").replaceFirstChar { it.uppercaseChar() })
             binding.tvDesR1.setText(response.getString("description").replaceFirstChar { it.uppercaseChar() })
 
-
+            Picasso.get().load(response.getString("image")).into(binding.imageView1)
         },
             Response.ErrorListener { errorMessage ->
 
@@ -196,7 +197,7 @@ class SugerenciasFragment : Fragment() {
 
             binding.tvPriceR2.setText(response.getString("price").replaceFirstChar { it.uppercaseChar() })
             binding.tvDesR2.setText(response.getString("description").replaceFirstChar { it.uppercaseChar() })
-
+            Picasso.get().load(response.getString("image")).into(binding.imageView2)
 
         },
             Response.ErrorListener { errorMessage ->
@@ -223,7 +224,7 @@ class SugerenciasFragment : Fragment() {
             binding.tvPriceR3.setText(response.getString("price").replaceFirstChar { it.uppercaseChar() })
             binding.tvDesR3.setText(response.getString("description").replaceFirstChar { it.uppercaseChar() })
 
-
+            Picasso.get().load(response.getString("image")).into(binding.imageView3)
         },
             Response.ErrorListener { errorMessage ->
 
@@ -247,7 +248,7 @@ class SugerenciasFragment : Fragment() {
             binding.tvPriceR4.setText(response.getString("price").replaceFirstChar { it.uppercaseChar() })
             binding.tvDesR4.setText(response.getString("description").replaceFirstChar { it.uppercaseChar() })
 
-
+            Picasso.get().load(response.getString("image")).into(binding.imageView4)
         },
             Response.ErrorListener { errorMessage ->
 
@@ -270,7 +271,7 @@ class SugerenciasFragment : Fragment() {
 
             binding.tvPriceR5.setText(response.getString("price").replaceFirstChar { it.uppercaseChar() })
             binding.tvDesR5.setText(response.getString("description").replaceFirstChar { it.uppercaseChar() })
-
+            Picasso.get().load(response.getString("image")).into(binding.imageView5)
 
         },
             Response.ErrorListener { errorMessage ->
@@ -294,7 +295,7 @@ class SugerenciasFragment : Fragment() {
 
             binding.tvPriceR6.setText(response.getString("price").replaceFirstChar { it.uppercaseChar() })
             binding.tvDesR6.setText(response.getString("description").replaceFirstChar { it.uppercaseChar() })
-
+            Picasso.get().load(response.getString("image")).into(binding.imageView6)
 
         },
             Response.ErrorListener { errorMessage ->

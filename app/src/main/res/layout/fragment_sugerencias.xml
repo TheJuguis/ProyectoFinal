@@ -128,7 +128,7 @@
                             tools:layout_editor_absoluteY="168dp" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imageView1"
                     android:layout_width="150dp"
                     android:layout_height="120dp"
 
@@ -226,6 +226,13 @@
                     tools:layout_conversion_absoluteWidth="120dp"
                     tools:layout_editor_absoluteX="40dp"
                     tools:layout_editor_absoluteY="168dp" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+
+                    android:layout_marginHorizontal="100dp"
+                    tools:src="@tools:sample/backgrounds/scenic" />
                 <Button
                     android:id="@+id/addWL2"
                     android:layout_width="match_parent"
@@ -317,6 +324,13 @@
                     tools:layout_conversion_absoluteWidth="120dp"
                     tools:layout_editor_absoluteX="40dp"
                     tools:layout_editor_absoluteY="168dp" />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+
+                    android:layout_marginHorizontal="100dp"
+                    tools:src="@tools:sample/backgrounds/scenic" />
                 <Button
                     android:id="@+id/addWL3"
                     android:layout_width="match_parent"
@@ -407,6 +421,13 @@
                     tools:layout_conversion_absoluteWidth="120dp"
                     tools:layout_editor_absoluteX="40dp"
                     tools:layout_editor_absoluteY="168dp" />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+
+                    android:layout_marginHorizontal="100dp"
+                    tools:src="@tools:sample/backgrounds/scenic" />
                 <Button
                     android:id="@+id/addWL4"
                     android:layout_width="match_parent"
@@ -498,6 +519,13 @@
                     tools:layout_conversion_absoluteWidth="120dp"
                     tools:layout_editor_absoluteX="40dp"
                     tools:layout_editor_absoluteY="168dp" />
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+
+                    android:layout_marginHorizontal="100dp"
+                    tools:src="@tools:sample/backgrounds/scenic" />
                 <Button
                     android:id="@+id/addWL5"
                     android:layout_width="match_parent"
@@ -588,6 +616,13 @@
                     tools:layout_conversion_absoluteWidth="120dp"
                     tools:layout_editor_absoluteX="40dp"
                     tools:layout_editor_absoluteY="168dp" />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+
+                    android:layout_marginHorizontal="100dp"
+                    tools:src="@tools:sample/backgrounds/scenic" />
                 <Button
                     android:id="@+id/addWL6"
                     android:layout_width="match_parent"
