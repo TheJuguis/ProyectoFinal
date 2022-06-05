@@ -162,7 +162,7 @@
         android:hint="ID de item a eliminar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/amarillito"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/btnEliminar"
         app:layout_constraintTop_toBottomOf="@id/contenedor"

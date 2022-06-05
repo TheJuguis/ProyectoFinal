@@ -4,6 +4,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.activity.viewModels
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyectofinal.database.Item
 import com.example.proyectofinal.databinding.ItemWishlistBinding
@@ -42,7 +43,7 @@ class HomeAdapter(private val wishList: List<Item>): RecyclerView.Adapter<HomeAd
             val myDB = FirebaseDatabase.getInstance()
             database = myDB.reference
 
-
+            binding.tvDescrip.isVisible=false
 
 
 

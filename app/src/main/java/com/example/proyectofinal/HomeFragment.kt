@@ -44,7 +44,7 @@ class HomeFragment : Fragment() {
         homeViewModel.getItems()
 
 
-        //RecyclerView de wishList
+
 
         homeViewModel.savedItems.observe(viewLifecycleOwner) {itemsList ->
             if(!itemsList.isNullOrEmpty()){

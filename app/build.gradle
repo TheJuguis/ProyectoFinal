@@ -44,6 +44,9 @@ android {
 }
 
 dependencies {
+    //------------------Picasso-----------------------
+    implementation 'com.squareup.picasso:picasso:2.8'
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     //----------------RETROFIT-------------
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'

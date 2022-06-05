@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import com.android.volley.RequestQueue
@@ -19,6 +20,7 @@ import org.json.JSONObject
 
 import androidx.fragment.app.viewModels
 import com.example.proyectofinal.database.Item
+import com.squareup.picasso.Picasso
 
 class SearchFragment : Fragment() {
 
@@ -64,6 +66,7 @@ class SearchFragment : Fragment() {
 
                 )
             )
+            Toast.makeText(context, "Agregado a la WishList", Toast.LENGTH_LONG).show()
             mainViewModel.getItems()
 
         }
@@ -89,8 +92,9 @@ class SearchFragment : Fragment() {
 
             binding.tvPrice.setText(response.getString("price").replaceFirstChar { it.uppercaseChar() })
             binding.tvCal.setText(response.getString("category").replaceFirstChar { it.uppercaseChar() })
-
-
+            val img = response.getString("image").replaceFirstChar { it.uppercase() }
+            Picasso.get().load(img).into(binding.ivProductSearch)
+            Log.d("imagenItem", "Link: $img")
         },
             Response.ErrorListener { errorMessage ->
 

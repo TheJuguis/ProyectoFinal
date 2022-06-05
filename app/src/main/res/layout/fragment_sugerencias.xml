@@ -1,12 +1,607 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SugerenciasFragment">
+    tools:context=".SugerenciasFragment"
+    android:id="@+id/frameLayout3">
 
-    <!-- TODO: Update blank fragment layout -->
 
 
-</FrameLayout>
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRODUCTOS"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="100dp"
+        tools:layout_conversion_absoluteWidth="211dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="30dp"
+        android:textAlignment="center"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#292929"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:id="@+id/tvtituloR1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECOMENDADO"
+                    android:textColor="@color/amarillito"
+                    android:textSize="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="100dp"
+                    tools:layout_conversion_absoluteWidth="211dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="30dp" />
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/tvCalR1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Categoria"
+                            android:textColor="@color/fiusha"
+                            tools:layout_conversion_absoluteHeight="19dp"
+
+
+                            tools:layout_conversion_absoluteWidth="0dp"
+
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="60dp" />
+
+                        <TextView
+                            android:id="@+id/tvIdR1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID"
+                            android:textColor="@color/fiusha"
+                            tools:layout_conversion_absoluteHeight="19dp"
+
+
+                            tools:layout_conversion_absoluteWidth="0dp"
+
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="99dp" />
+
+                        <TextView
+                            android:id="@+id/tvPriceR1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Precio"
+                            android:textColor="@color/fiusha"
+                            tools:layout_conversion_absoluteHeight="19dp"
+
+
+                            tools:layout_conversion_absoluteWidth="0dp"
+
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="139dp" />
+
+                        <TextView
+                            android:id="@+id/tvDesR1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Descripcion"
+
+
+                            android:textColor="@color/fiusha"
+
+                            tools:layout_conversion_absoluteHeight="19dp"
+                            tools:layout_conversion_absoluteWidth="120dp"
+                            tools:layout_editor_absoluteX="40dp"
+                            tools:layout_editor_absoluteY="168dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+
+                    android:layout_marginHorizontal="100dp"
+                    tools:src="@tools:sample/backgrounds/scenic" />
+
+                <Button
+                    android:id="@+id/addWL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar a Wish List"
+                    android:background="@color/fiusha"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvtituloR2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECOMENDADO"
+                    android:textColor="@color/amarillito"
+
+                    android:textSize="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="100dp"
+                    tools:layout_conversion_absoluteWidth="211dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="30dp" />
+
+
+                <TextView
+                    android:id="@+id/tvCalR2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categoria"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <TextView
+                    android:id="@+id/tvIdR2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <TextView
+                    android:id="@+id/tvPriceR2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precio"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="139dp" />
+
+                <TextView
+                    android:id="@+id/tvDesR2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+
+
+                    android:textColor="@color/fiusha"
+
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="120dp"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="168dp" />
+                <Button
+                    android:id="@+id/addWL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar a Wish List"
+                    android:background="@color/fiusha"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="#292929"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:id="@+id/tvtituloR3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECOMENDADO"
+                    android:textColor="@color/amarillito"
+                    android:textSize="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="100dp"
+                    tools:layout_conversion_absoluteWidth="211dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="30dp" />
+
+
+                <TextView
+                    android:id="@+id/tvCalR3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categoria"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <TextView
+                    android:id="@+id/tvIdR3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <TextView
+                    android:id="@+id/tvPriceR3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precio"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="139dp" />
+
+                <TextView
+                    android:id="@+id/tvDesR3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+
+
+                    android:textColor="@color/fiusha"
+
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="120dp"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="168dp" />
+                <Button
+                    android:id="@+id/addWL3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar a Wish List"
+                    android:background="@color/fiusha"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:id="@+id/tvtituloR4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECOMENDADO"
+                    android:textColor="@color/amarillito"
+                    android:textSize="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="100dp"
+                    tools:layout_conversion_absoluteWidth="211dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="30dp" />
+
+
+                <TextView
+                    android:id="@+id/tvCalR4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categoria"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <TextView
+                    android:id="@+id/tvIdR4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <TextView
+                    android:id="@+id/tvPriceR4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precio"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="139dp" />
+
+                <TextView
+                    android:id="@+id/tvDesR4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+
+
+                    android:textColor="@color/fiusha"
+
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="120dp"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="168dp" />
+                <Button
+                    android:id="@+id/addWL4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar a Wish List"
+                    android:background="@color/fiusha"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="#292929"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:id="@+id/tvtituloR5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECOMENDADO"
+                    android:textColor="@color/amarillito"
+                    android:textSize="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="100dp"
+                    tools:layout_conversion_absoluteWidth="211dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="30dp" />
+
+
+                <TextView
+                    android:id="@+id/tvCalR5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categoria"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <TextView
+                    android:id="@+id/tvIdR5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <TextView
+                    android:id="@+id/tvPriceR5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precio"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="139dp" />
+
+                <TextView
+                    android:id="@+id/tvDesR5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+
+
+                    android:textColor="@color/fiusha"
+
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="120dp"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="168dp" />
+                <Button
+                    android:id="@+id/addWL5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar a Wish List"
+                    android:background="@color/fiusha"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:id="@+id/tvtituloR6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECOMENDADO"
+                    android:textColor="@color/amarillito"
+                    android:textSize="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="100dp"
+                    tools:layout_conversion_absoluteWidth="211dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="30dp" />
+
+
+                <TextView
+                    android:id="@+id/tvCalR6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categoria"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <TextView
+                    android:id="@+id/tvIdR6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="99dp" />
+
+                <TextView
+                    android:id="@+id/tvPriceR6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precio"
+                    android:textColor="@color/fiusha"
+                    tools:layout_conversion_absoluteHeight="19dp"
+
+
+                    tools:layout_conversion_absoluteWidth="0dp"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="139dp" />
+
+                <TextView
+                    android:id="@+id/tvDesR6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+
+
+                    android:textColor="@color/fiusha"
+
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_conversion_absoluteWidth="120dp"
+                    tools:layout_editor_absoluteX="40dp"
+                    tools:layout_editor_absoluteY="168dp" />
+                <Button
+                    android:id="@+id/addWL6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar a Wish List"
+                    android:background="@color/fiusha"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
