@@ -152,7 +152,7 @@
         android:textSize="10dp"
         app:iconTint="@color/fiusha"
         app:icon="@drawable/remove_icon"
-        android:background="#00000000"
+        android:background="@color/amarillito"
         android:textColor="@color/fiusha"
         android:layout_marginTop="10dp"
         app:layout_constraintRight_toRightOf="parent"/>
